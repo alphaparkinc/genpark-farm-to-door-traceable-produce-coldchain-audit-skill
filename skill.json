@@ -1,0 +1,38 @@
+{
+  "name": "genpark-farm-to-door-traceable-produce-coldchain-audit-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Farm-to-door fresh produce QR traceability scanner, ozone sanitization audit, and 100% pesticide-free certification tracker.",
+  "author": "genpark",
+  "category": "agritech",
+  "tags": [
+    "produce-traceability",
+    "pesticide-free",
+    "ozone-wash",
+    "farm-to-door",
+    "pluckk"
+  ],
+  "inputs": {
+    "batch_qr_code": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "traceability_id": {
+      "type": "string"
+    },
+    "crop_name": {
+      "type": "string"
+    },
+    "farm_source": {
+      "type": "string"
+    },
+    "chemical_pesticide_residue_ppm": {
+      "type": "number"
+    },
+    "pan_scanned_quality_grade": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
